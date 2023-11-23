@@ -9,3 +9,4 @@ b=5
 c=7
 
 print(f"El número {a} es el primer valor impar, el segundo es {b} y el tercero es {c}")
+
