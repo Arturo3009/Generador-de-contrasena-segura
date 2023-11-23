@@ -6,7 +6,7 @@ print(a,b,'gracias')
 
 a=3
 b=5
-c=9
+c=11
 
 print(f"El número {a} es el primer valor impar, el segundo es {b} y el tercero es {c}")
 
