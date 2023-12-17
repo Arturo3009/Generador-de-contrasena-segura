@@ -71,17 +71,23 @@ if decision.lower()==opcion1.lower():
             print("datos incorrectos, ingrese de nuevo por favor")
             dificultad=int(input())
         if dificultad==1 and número<=3:
-            print("Hemos generado tu contraseña")
-            print(caracter4+nombre+caracter1)
-            print("Gracias por jugar 😉​")
+            def contraseñag1(c4,c1):
+                 suma=c4+nombre+c1
+                 return suma
+            contra=contraseñag1("eRt","@<")
+            print("Su contraseña es: ", contra,", gracias por jugar 😉")
         if dificultad==1 and 3<número<6:
-            print("Hemos generado tu contraseña")
-            print(caracter5+nombre+caracter6)
-            print("Gracias por jugar 😉​")
+           def contraseñag1(c5,c6):
+                 suma=c5+nombre+c6
+                 return suma
+           contra=contraseñag1("pKn","3+Q")
+           print("Su contraseña es: ", contra,", gracias por jugar 😉")
         if dificultad==1 and número>=6:
-            print("Hemos generado tu contraseña")
-            print(caracter3+nombre+caracter7)
-            print("Gracias por jugar 😉​")
+          def contraseñag1(c3,c7):
+                 suma=c3+nombre+c7
+                 return suma
+          contra=contraseñag1("#rt","pBv")
+          print("Su contraseña es: ", contra,", gracias por jugar 😉")
         if dificultad==2 and número<=3:
             def contraseñag1(c3,c8,c9):
                  suma=c3+nombre+c8+color+c9
