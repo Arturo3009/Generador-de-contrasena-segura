@@ -19,54 +19,56 @@ caracter8="345"
 caracter9="PyHII"
 facil= "1"
 dificil= "2"
+
 print("""              
-           GENERADOR DE CONTRASEÑA SEGURO
-        Bienvenido a mi juego, ayúdame con tus datos
-          """)
+    GENERADOR DE CONTRASEÑA SEGURO
+    ¡Bienvenido al Generador de Contraseñas Seguras! 
+    Aquí, la seguridad es nuestra prioridad. Crea contraseñas robustas y protege tus datos con confianza. 
+    ¡Comencemos a fortalecer tu seguridad en línea juntos!
+    """)
 print("Ingresa tu nombre: ")
-nombre=input()
+nombre = input()
 print("Número al azar del 1 al 10: ")
-número=int(input())
-print("color favorito: ")
-color=input()
-print("""       Para continuar con el juego necesito saber si deseas CONTINUAR o SALIR     """)
-decision=input()
-while decision.lower() != opcion1.lower() and decision.lower()!=opcion2.lower():
-     print("datos incorrectos, ingrese de nuevo por favor")
-     decision=input()
-if decision.lower()==opcion1.lower():
-    print("¿Deseas generar una contraseña aleatoria SI o NO: ")
-    siono=input()
-    while siono.lower() != si.lower() and siono.lower() != no.lower():
-        print("Datos ingresados incorrectamente, vuelva a intentar")
-        siono=input()
-    if siono.lower()==si.lower() and número<=3 and nombre.lower()<="j":
-            print("Hemos generado tu contraseña")
-            print(contra1)
-            print("Muchas gracias por jugar 😎")
-    if siono.lower()==si.lower() and 3<número<6 and nombre.lower()<="j":
-            print("Hemos generado tu contraseña")
-            print(contra2)
-            print("Muchas gracias por jugar 😎")
-    if siono.lower()==si.lower() and número>=6 and nombre.lower()<="j":
-            print("Hemos generado tu contraseña")
-            print(contra3)
-            print("Muchas gracias por jugar 😎")
-    if siono.lower()==si.lower() and número<=3 and nombre.lower()>="k":
-            print("Hemos genrado tu contraseña")
-            print(contra4)
-            print("Muchas gracias por jugar 😎")
-    if siono.lower()==si.lower() and 3<número<6 and nombre.lower()>="k":
-            print("Hemos genrado tu contraseña")
-            print(contra5)
-            print("Muchas gracias por jugar 😎")
-    if siono.lower()==si.lower() and número>=6 and nombre.lower()>="k":
-            print("Hemos generado tu contraseña")
-            print(contra6)
-            print("Muchas gracias por jugar 😎")
+número = int(input())
+print("Color favorito: ")
+color = input()
+print("""       
+    Para continuar con el juego necesito saber si deseas CONTINUAR o SALIR     
+    """)
+decision = input()
+
+while decision.lower() != opcion1.lower() and decision.lower() != opcion2.lower():
+    print("Datos incorrectos, ingresa de nuevo por favor")
+    decision = input()
+
+if decision.lower() == opcion1.lower():
+    print("¿Deseas generar una contraseña aleatoria? (SI o NO): ")
+    siono = input().lower()
+
+    while siono != si and siono != no:
+        print("Datos ingresados incorrectamente, por favor intenta de nuevo: ")
+        siono = input().lower()
+
+    if siono == si:
+        print("Ingrese la longitud deseada para la contraseña: ")
+        longitud = int(input())
+
+        while longitud <= 0:
+            print("Por favor, ingrese una longitud válida mayor que cero: ")
+            longitud = int(input())
+
+        caracteres = [caracter1, caracter2, caracter3, caracter4, caracter5, caracter6, caracter7, caracter8, caracter9]
+
+        import random
+        nueva_contra = ''.join(random.choice(''.join(caracteres)) for _ in range(longitud))
+
+        print(f"Tu nueva contraseña es: {nueva_contra}")
+        print("¡Gracias por jugar! 😊")
+
     if siono.lower()==no.lower():
         print("Haz seleccionado 'No', deseas una contraseña fácil(1) o díficil(2): ")
         dificultad=int(input())
+
         while dificultad != 1 and dificultad != 2:
             print("datos incorrectos, ingrese de nuevo por favor")
             dificultad=int(input())
@@ -106,6 +108,7 @@ if decision.lower()==opcion1.lower():
                  return suma
             contra=contraseñag1("@<","wEr","Ase")
             print("Su contraseña es: ", contra, "gracias por jugar 😉")
+
 if decision.lower()==opcion2.lower():
     print("Gracias, vuelve pronto 😎")    
 
