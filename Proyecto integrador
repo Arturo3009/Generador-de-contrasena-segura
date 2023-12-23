@@ -1,0 +1,37 @@
+# Generador de Contraseñas Seguras
+
+Este proyecto es un generador de contraseñas seguro que prioriza la seguridad en línea al crear contraseñas robustas y difíciles de descifrar.
+
+## Objetivo
+
+El objetivo principal de este programa es proporcionar a los usuarios una herramienta fácil de usar para generar contraseñas altamente seguras, fortaleciendo así la protección de sus datos en línea.
+
+## Funcionalidades
+
+### Generación de Contraseñas Aleatorias
+
+- Permite a los usuarios generar contraseñas aleatorias con diferentes niveles de complejidad.
+- Se pueden ajustar la longitud y los tipos de caracteres utilizados para adaptar las contraseñas a las preferencias individuales.
+
+### Contraseñas Personalizadas
+
+- Proporciona opciones para generar contraseñas personalizadas según la elección del usuario 
+- La personalización incluye la combinación de elementos como nombre, color favorito o datos personales para crear contraseñas únicas y seguras.
+
+### Enfoque en Seguridad
+
+- Prioriza la seguridad de las contraseñas generadas, asegurando que sean difíciles de descifrar mediante algoritmos avanzados.
+- No almacena las contraseñas generadas, manteniendo así la privacidad de los usuarios.
+
+
+## Tecnologías Utilizadas
+
+- Lenguaje de programación: Python
+
+
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, puedes contactarme a través de [villacisestalin12@gmail.com, tel:0985480848].
+
+---
+¡Gracias por utilizar nuestro Generador de Contraseñas Seguras! Tu seguridad en línea es nuestra prioridad.
